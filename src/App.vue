@@ -1,8 +1,6 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from '@/components/HelloWorld.vue';
-import HelloTsx from '@/components/HelloTsx';
 </script>
 
 <template>
@@ -14,8 +12,12 @@ import HelloTsx from '@/components/HelloTsx';
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloTsx />
-  <HelloWorld msg="Vite + Vue" />
+  <div class="link-wrap">
+    <router-link to="/">Go to Home</router-link>
+    <router-link to="/about">Go to About</router-link>
+  </div>
+
+  <RouterView />
 </template>
 
 <style scoped>
@@ -29,5 +31,8 @@ import HelloTsx from '@/components/HelloTsx';
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+.link-wrap {
+  margin-bottom: 10px;
 }
 </style>

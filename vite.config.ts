@@ -22,4 +22,7 @@ export default defineConfig({
       },
     ],
   },
+  build: {
+    target: 'es2015', // 构建出来的产物支持的环境 https://cn.vitejs.dev/guide/build.html
+  },
 });
