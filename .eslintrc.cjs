@@ -20,5 +20,6 @@ module.exports = {
   plugins: ['vue', '@typescript-eslint'],
   rules: {
     '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/ban-types': 'off',
   },
 };
