@@ -28,7 +28,13 @@
       "prettier --write"
     ]
   },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "dependencies": {
+    "-": "^0.0.1",
     "vue": "^3.2.41"
   },
   "devDependencies": {
@@ -37,6 +43,8 @@
     "@vitejs/plugin-vue": "^3.2.0",
     "@vitejs/plugin-vue-jsx": "^2.1.1",
     "@vue/test-utils": "^2.2.6",
+    "commitizen": "^4.2.6",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.29.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
