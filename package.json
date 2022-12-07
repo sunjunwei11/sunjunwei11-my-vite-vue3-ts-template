@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:once": "vitest run",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "cz"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [

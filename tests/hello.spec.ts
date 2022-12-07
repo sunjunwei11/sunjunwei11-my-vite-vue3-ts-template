@@ -1,5 +1,5 @@
-import Hello from "../src/components/HelloWorld.vue";
+import Hello from '@/components/HelloTsx';
 
-test("Test Hello.vue", () => {
+test('Test Hello.vue', () => {
   console.log(Hello);
 });
