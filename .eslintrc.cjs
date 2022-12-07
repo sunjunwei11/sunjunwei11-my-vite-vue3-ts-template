@@ -18,7 +18,5 @@ module.exports = {
     parser: '@typescript-eslint/parser',
   },
   plugins: ['vue', '@typescript-eslint'],
-  rules: {
-    quotes: [2, 'double'],
-  },
+  rules: {},
 };
