@@ -12,7 +12,7 @@
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
     "noEmit": true,
-    "types": ["vitest/globals", "element-plus/global"],
+    "types": ["vitest/globals"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
