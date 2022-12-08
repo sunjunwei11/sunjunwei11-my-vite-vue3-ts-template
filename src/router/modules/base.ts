@@ -1,12 +1,22 @@
-export default [
+import { RouteRecordRaw } from 'vue-router';
+
+const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'home',
-    component: () => import('@/views/HomeView.vue'),
+    redirect: () => {
+      return { name: 'mintToken' };
+    },
   },
   {
-    path: '/about',
-    name: 'about',
-    component: () => import('@/views/AboutView.vue'),
+    path: '/mint-token',
+    name: 'mintToken',
+    component: () => import('@/views/MintToken'),
+  },
+  {
+    path: '/mint-nft',
+    name: 'mintNft',
+    component: () => import('@/views/MintNft'),
   },
 ];
+
+export default routes;
