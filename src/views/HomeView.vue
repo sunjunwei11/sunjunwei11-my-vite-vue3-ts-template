@@ -1,6 +1,7 @@
 <template>
   <div>This is Home Page</div>
-  <button @click="increment">counter from store {{ count }}</button>
+  <ElButton @click="increment">counter from store {{ count }}</ElButton>
+  <ElDivider />
   <HelloTsx />
   <HelloWorld msg="Vite + Vue" />
 </template>
