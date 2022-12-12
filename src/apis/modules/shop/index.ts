@@ -1,4 +1,4 @@
-import { get, post } from '@/utils/request';
+import { shopInstance } from '@/apis';
 import {
   AddShopParams,
   AddShopRes,
@@ -6,12 +6,14 @@ import {
   GetShopDetailRes,
 } from './types';
 
+const { post: shopPost, get: shopGet } = shopInstance;
+
 const addShop = (params: AddShopParams) => {
-  return post<AddShopRes>('/addShop', params);
+  return shopPost<AddShopRes>('/addShop', params);
 };
 
 const getShopDetail = (params: GetShopDetailParams) => {
-  return get<GetShopDetailRes>('/shopDetail', { params });
+  return shopGet<GetShopDetailRes>('/shopDetail', { params });
 };
 
 export { addShop, getShopDetail };

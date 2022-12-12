@@ -1,2 +1,2 @@
-export * from './shop';
-export * from './user';
+export * from './instances';
+export * from './modules';

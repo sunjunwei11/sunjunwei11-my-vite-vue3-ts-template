@@ -10,7 +10,8 @@
     "test": "vitest",
     "test:once": "vitest run",
     "prepare": "husky install",
-    "commit": "cz"
+    "commit": "cz",
+    "tree:src": "treer -d src -e project-tree.txt"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
